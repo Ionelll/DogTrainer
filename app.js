@@ -7,6 +7,6 @@ app.use("/api", mailRoutes);
 app.use(express.static("./views"));
 app.use(express.json());
 app.get("/", (req, res) => {
-	res.sendFile("index.html");
+	res.render("index.html");
 });
 module.exports = app;
