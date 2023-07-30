@@ -6,6 +6,6 @@ app = express();
 
 app.use("/api", mailRoutes);
 app.use("", getSite);
-app.use(express.static(path.join(__dirname, "views")));
+app.use(express.static("./views"));
 app.use(express.json());
 module.exports = app;
